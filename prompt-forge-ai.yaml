@@ -1,20 +1,35 @@
 system:
-  title: "Image Generation AI Prompt Optimization System"
-  version: "1.0"
-  purpose: "Structured prompt generation and optimization for high-quality image creation"
+  title: "Image Generation AI Prompt System"
+  version: "1.1"
+  purpose: "Structured prompt generation with emotion control and comprehensive validation"
 
 meta_prompt_generation:
   input_analysis:
     basic_analysis:
       - type: "morphological_syntax"
         enabled: true
-        focus: "Analysis of relationships between main image elements and modifiers"
+        focus: "Element and modifier relationships"
       - type: "semantic"
         enabled: true
-        focus: "Semantic consistency check between image elements"
+        focus: "Element consistency"
       - type: "contextual"
         enabled: true
-        focus: "Context compatibility of art style and image elements"
+        focus: "Style compatibility"
+    emotion_intensity_system:
+      levels:
+        - name: "subtle"
+          modifiers: ["slightly", "gentle", "soft"]
+          weight: 0.25
+        - name: "moderate"
+          modifiers: ["moderately", "balanced", "natural"]
+          weight: 0.5
+        - name: "strong"
+          modifiers: ["very", "intense", "dramatic"]
+          weight: 0.75
+        - name: "extreme"
+          modifiers: ["extremely", "maximum", "overwhelming"]
+          weight: 1.0
+      default: "moderate"
     advanced_analysis:
       - category: "Visual Element Analysis"
         parameters: 
@@ -30,7 +45,6 @@ meta_prompt_generation:
         parameters:
           - "Generation AI capability verification"
           - "Resolution requirement analysis"
-          - "Processing time optimization"
 
   construction_framework:
     core_elements:
@@ -40,80 +54,74 @@ meta_prompt_generation:
         constraints: "PG-13 equivalent ethical standards compliance"
       objectives:
         primary: "High-quality image generation accurately reflecting user intent"
-        secondary: "Achievement of efficient generation process"
+        secondary: 
+          - "Achievement of efficient generation process"
+          - "Emotional resonance optimization"
       requirements:
         functional: 
           - "Clear definition of main subject"
           - "Appropriate background setting"
           - "Light source and shadow specification"
+          - "Emotional atmosphere control"
         non_functional:
-          - "Generation time optimization"
           - "Consistent art style maintenance"
-
-  evaluation_matrix:
-    criteria:
-      - category: "Visual Quality"
-        metrics:
-          - name: "Composition Balance"
-            threshold: "80%+ element balance"
-          - name: "Color Harmony"
-            threshold: "Appropriate use of complementary colors"
-      - category: "Technical Quality"
-        metrics:
-          - name: "Resolution Compliance"
-            threshold: "100% achievement of specified resolution"
-          - name: "Noise Level"
-            threshold: "Less than 5% visible noise"
+          - "Emotion intensity balance"
 
 prompt_construction:
-  environment:
-    context: "Image Generation AI Runtime Environment"
-    constraints: 
-      - "Token limit: 500 characters"
-      - "Available style modifier restrictions"
-    dependencies: 
-      - "Image generation engine version compatibility"
-      - "Available model constraints"
+  core_elements:
+    main_subject:
+      required:
+        - "Subject description"
+        - "Emotional state"
+        - "Intensity level"
+      optional:
+        - "Pose"
+        - "Expression"
+    environment:
+      required:
+        - "Background type"
+        - "Lighting mood"
+      optional:
+        - "Weather"
+        - "Time setting"
 
-  prerequisites:
-    knowledge: 
-      - "Basic photography/art terminology"
-      - "Fundamental composition principles"
-    resources: 
-      - "Reference images (optional)"
-      - "Style setting parameters"
-    conditions: 
-      - "Sufficient GPU processing power"
-      - "Stable network connection"
+  emotion_mapping:
+    joy:
+      subtle: "soft warm light, gentle upward lines"
+      moderate: "warm lighting, upward composition"
+      strong: "vibrant warm colors, dynamic upward movement"
+      extreme: "intense golden light, dramatic ascending composition"
+    serenity:
+      subtle: "soft cool tones, minimal elements"
+      moderate: "balanced cool palette, horizontal lines"
+      strong: "deep cool colors, expansive space"
+      extreme: "pure cool tones, vast minimal composition"
+    drama:
+      subtle: "slight shadow contrast, angled elements"
+      moderate: "defined shadows, diagonal composition"
+      strong: "high contrast, strong diagonal movement"
+      extreme: "maximum contrast, extreme perspective"
+    melancholy:
+      subtle: "soft blue tones, gentle downward lines"
+      moderate: "muted colors, descending composition"
+      strong: "deep shadows, strong downward movement"
+      extreme: "intense dark tones, dramatic descending composition"
 
-  goals:
-    primary:
-      objective: "Accurate realization of user's visual intent"
-      success_criteria: 
-        - "Clear expression of main elements"
-        - "Appropriate application of specified style"
-    secondary:
-      objectives: 
-        - "Generation efficiency optimization"
-        - "Reproducibility assurance"
-      metrics:
-        - "Generation time: within 30 seconds"
-        - "Similar image generation success rate: 90%+"
-
-  process:
-    stages:
-      - name: "Element Analysis"
-        steps:
-          - action: "Main subject identification"
-            validation: "Subject clarity check"
-          - action: "Background element definition"
-            validation: "Background harmony verification"
-      - name: "Style Definition"
-        steps:
-          - action: "Art style setting"
-            validation: "Style reference consistency check"
-          - action: "Technical parameter adjustment"
-            validation: "Parameter validity check"
+  validation:
+    prompt_level_checks:
+      - "Style and emotion consistency"
+      - "Technical feasibility within prompt"
+      - "Content safety compliance"
+    
+    constraints:
+      content_guidelines:
+        - "PG-13 equivalent standards"
+        - "Copyright compliance"
+        - "Privacy protection"
+      technical_guidelines:
+        - "Resolution specification format"
+        - "Style modifier compatibility"
+        - "Element count limits"
 
 quality_management:
   verification:
@@ -124,9 +132,11 @@ quality_management:
     semantics:
       - "Logical consistency between elements"
       - "Style specification clarity"
+      - "Emotional coherence"
     context:
       - "Art style consistency"
       - "Visual element harmony"
+      - "Emotional intensity appropriateness"
 
   error_handling:
     patterns:
@@ -136,40 +146,24 @@ quality_management:
       - type: "Style contradiction"
         response: "Detection of conflicting style specifications"
         recovery: "Alternative style suggestions"
-
-  feedback:
-    collection:
-      methods: "Visual evaluation of generated results"
-      timing: "Immediate after each generation"
-    analysis:
-      metrics: 
-        - "Intent match rate"
-        - "Technical quality score"
-      thresholds:
-        - "Intent match rate: 80%+"
-        - "Quality score: 75+ points"
-    implementation:
-      process: "Prompt adjustment based on feedback"
-      validation: "Post-adjustment improvement confirmation"
+      - type: "Emotion intensity mismatch"
+        response: "Detection of inconsistent emotional elements"
+        recovery: "Intensity adjustment suggestions"
 
 security_compliance:
   security:
     checks:
       - domain: "Content Safety"
         criteria: "Inappropriate content exclusion"
-        action: "Safety filter application"
       - domain: "Privacy Protection"
         criteria: "No personal information inclusion"
-        action: "Personal identification element check"
 
   compliance:
     requirements:
       - category: "Copyright Compliance"
         criteria: "Protected material usage restrictions"
-        validation: "Reference source rights verification"
       - category: "Ethical Standards"
         criteria: "Community guideline compliance"
-        validation: "Content policy check"
 
 output_format:
   structure:
@@ -179,8 +173,9 @@ output_format:
         required_elements:
           - "Subject details"
           - "Pose/angle specification"
+          - "Emotional state"
         optional_elements:
-          - "Emotion/expression specification"
+          - "Expression specification"
           - "Action state"
       - name: "Environment Settings"
         required_elements:
@@ -193,6 +188,7 @@ output_format:
         required_elements:
           - "Art style"
           - "Rendering quality"
+          - "Emotional intensity"
         optional_elements:
           - "Reference artists"
           - "Special effects"
@@ -204,24 +200,30 @@ output_format:
     content:
       - rule: "Required element presence verification"
         condition: "All required fields completed"
+      - rule: "Emotional consistency check"
+        condition: "Coherent intensity levels across elements"
+    
+    quality_rules:
+      - "Consistent style throughout elements"
+      - "Balanced emotional expression"
+      - "Clear technical specifications"
 
-implementation_guide:
-  template_application:
-    - step: "Detailed description of main subject"
-    - step: "Gradual addition of environmental elements"
-    - step: "Application of style modifiers"
+implementation_examples:
+  basic:
+    - input: "happy scene, strong"
+      output: "vibrant sunny scene, intense joyful atmosphere, dynamic upward composition, warm color palette"
+    - input: "peaceful landscape, subtle"
+      output: "gentle misty landscape, soft serene atmosphere, minimal horizontal composition, soft cool tones"
 
-  customization:
-    - action: "Optimization for specific AI engines"
-    - action: "Style adjustment based on user preferences"
-    - action: "Generation efficiency fine-tuning"
-
-  requirements:
-    - check: "Prompt length limit compliance"
-    - check: "Complete description of required elements"
-    - check: "Style specification clarity"
+  style_variations:
+    - base: "portrait, dramatic, extreme"
+      variations:
+        - "portrait with maximum contrast, overwhelming dramatic atmosphere, extreme perspective, deep shadows"
+        - "portrait in intense lighting, powerful emotional impact, dynamic angular composition"
 
 notes:
   - "Maintain balance between prompt conciseness and detail"
-  - "Prioritize visual consistency"
-  - "Continuously optimize based on generation results"
+  - "Ensure emotional and technical coherence"
+  - "Verify content safety and ethical compliance"
+  - "Match intensity levels across all elements"
+  - "Consider cultural context of emotional expression"
