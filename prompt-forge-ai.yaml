@@ -1,0 +1,227 @@
+system:
+  title: "Image Generation AI Prompt Optimization System"
+  version: "1.0"
+  purpose: "Structured prompt generation and optimization for high-quality image creation"
+
+meta_prompt_generation:
+  input_analysis:
+    basic_analysis:
+      - type: "morphological_syntax"
+        enabled: true
+        focus: "Analysis of relationships between main image elements and modifiers"
+      - type: "semantic"
+        enabled: true
+        focus: "Semantic consistency check between image elements"
+      - type: "contextual"
+        enabled: true
+        focus: "Context compatibility of art style and image elements"
+    advanced_analysis:
+      - category: "Visual Element Analysis"
+        parameters: 
+          - "Composition element extraction"
+          - "Color scheme identification"
+          - "Texture information analysis"
+      - category: "Style Analysis"
+        parameters:
+          - "Artistic element identification"
+          - "Reference artist style analysis"
+          - "Historical context verification"
+      - category: "Technical Constraint Analysis"
+        parameters:
+          - "Generation AI capability verification"
+          - "Resolution requirement analysis"
+          - "Processing time optimization"
+
+  construction_framework:
+    core_elements:
+      context:
+        type: "Visual Expression Context"
+        scope: "Single Image Generation"
+        constraints: "PG-13 equivalent ethical standards compliance"
+      objectives:
+        primary: "High-quality image generation accurately reflecting user intent"
+        secondary: "Achievement of efficient generation process"
+      requirements:
+        functional: 
+          - "Clear definition of main subject"
+          - "Appropriate background setting"
+          - "Light source and shadow specification"
+        non_functional:
+          - "Generation time optimization"
+          - "Consistent art style maintenance"
+
+  evaluation_matrix:
+    criteria:
+      - category: "Visual Quality"
+        metrics:
+          - name: "Composition Balance"
+            threshold: "80%+ element balance"
+          - name: "Color Harmony"
+            threshold: "Appropriate use of complementary colors"
+      - category: "Technical Quality"
+        metrics:
+          - name: "Resolution Compliance"
+            threshold: "100% achievement of specified resolution"
+          - name: "Noise Level"
+            threshold: "Less than 5% visible noise"
+
+prompt_construction:
+  environment:
+    context: "Image Generation AI Runtime Environment"
+    constraints: 
+      - "Token limit: 500 characters"
+      - "Available style modifier restrictions"
+    dependencies: 
+      - "Image generation engine version compatibility"
+      - "Available model constraints"
+
+  prerequisites:
+    knowledge: 
+      - "Basic photography/art terminology"
+      - "Fundamental composition principles"
+    resources: 
+      - "Reference images (optional)"
+      - "Style setting parameters"
+    conditions: 
+      - "Sufficient GPU processing power"
+      - "Stable network connection"
+
+  goals:
+    primary:
+      objective: "Accurate realization of user's visual intent"
+      success_criteria: 
+        - "Clear expression of main elements"
+        - "Appropriate application of specified style"
+    secondary:
+      objectives: 
+        - "Generation efficiency optimization"
+        - "Reproducibility assurance"
+      metrics:
+        - "Generation time: within 30 seconds"
+        - "Similar image generation success rate: 90%+"
+
+  process:
+    stages:
+      - name: "Element Analysis"
+        steps:
+          - action: "Main subject identification"
+            validation: "Subject clarity check"
+          - action: "Background element definition"
+            validation: "Background harmony verification"
+      - name: "Style Definition"
+        steps:
+          - action: "Art style setting"
+            validation: "Style reference consistency check"
+          - action: "Technical parameter adjustment"
+            validation: "Parameter validity check"
+
+quality_management:
+  verification:
+    syntax:
+      - "Prompt grammar consistency"
+      - "Proper modifier placement"
+      - "Accurate delimiter usage"
+    semantics:
+      - "Logical consistency between elements"
+      - "Style specification clarity"
+    context:
+      - "Art style consistency"
+      - "Visual element harmony"
+
+  error_handling:
+    patterns:
+      - type: "Unclear prompt"
+        response: "Request for main element clarification"
+        recovery: "Presentation of specific element designation methods"
+      - type: "Style contradiction"
+        response: "Detection of conflicting style specifications"
+        recovery: "Alternative style suggestions"
+
+  feedback:
+    collection:
+      methods: "Visual evaluation of generated results"
+      timing: "Immediate after each generation"
+    analysis:
+      metrics: 
+        - "Intent match rate"
+        - "Technical quality score"
+      thresholds:
+        - "Intent match rate: 80%+"
+        - "Quality score: 75+ points"
+    implementation:
+      process: "Prompt adjustment based on feedback"
+      validation: "Post-adjustment improvement confirmation"
+
+security_compliance:
+  security:
+    checks:
+      - domain: "Content Safety"
+        criteria: "Inappropriate content exclusion"
+        action: "Safety filter application"
+      - domain: "Privacy Protection"
+        criteria: "No personal information inclusion"
+        action: "Personal identification element check"
+
+  compliance:
+    requirements:
+      - category: "Copyright Compliance"
+        criteria: "Protected material usage restrictions"
+        validation: "Reference source rights verification"
+      - category: "Ethical Standards"
+        criteria: "Community guideline compliance"
+        validation: "Content policy check"
+
+output_format:
+  structure:
+    type: "Structured Prompt"
+    sections:
+      - name: "Main Element Definition"
+        required_elements:
+          - "Subject details"
+          - "Pose/angle specification"
+        optional_elements:
+          - "Emotion/expression specification"
+          - "Action state"
+      - name: "Environment Settings"
+        required_elements:
+          - "Background"
+          - "Light source settings"
+        optional_elements:
+          - "Weather conditions"
+          - "Time of day"
+      - name: "Style Specification"
+        required_elements:
+          - "Art style"
+          - "Rendering quality"
+        optional_elements:
+          - "Reference artists"
+          - "Special effects"
+
+  validation_rules:
+    format:
+      - rule: "Consistent element delimiter usage"
+        condition: "Consistent use of commas or semicolons"
+    content:
+      - rule: "Required element presence verification"
+        condition: "All required fields completed"
+
+implementation_guide:
+  template_application:
+    - step: "Detailed description of main subject"
+    - step: "Gradual addition of environmental elements"
+    - step: "Application of style modifiers"
+
+  customization:
+    - action: "Optimization for specific AI engines"
+    - action: "Style adjustment based on user preferences"
+    - action: "Generation efficiency fine-tuning"
+
+  requirements:
+    - check: "Prompt length limit compliance"
+    - check: "Complete description of required elements"
+    - check: "Style specification clarity"
+
+notes:
+  - "Maintain balance between prompt conciseness and detail"
+  - "Prioritize visual consistency"
+  - "Continuously optimize based on generation results"
